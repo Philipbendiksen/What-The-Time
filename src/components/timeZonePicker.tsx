@@ -20,7 +20,7 @@ const TimezoneSelector: React.FC = () => {
         onChange={handleTimezoneChange}
         value={selectedTimezone}
       >
-        <option value="">Välj tidszon</option>
+        <option value="">Choose time zone</option>
         <option value="America/New_York">New York</option>
         <option value="Europe/London">London</option>
         <option value="Asia/Tokyo">Tokyo</option>
