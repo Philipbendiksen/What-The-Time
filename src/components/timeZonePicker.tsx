@@ -16,7 +16,7 @@ const TimezoneSelector: React.FC = () => {
         Choose your time zone
       </h1>
       <select
-        className="border w-96 p-3 rounded-md text-lg bg-stone-700 mb-6 text-white text-center border-gray-700 focus:outline-none focus:border-gray-500"
+        className="border w-96 p-3 rounded-md text-2xl bg-stone-700 mb-6 text-white text-center border-gray-700 focus:outline-none focus:border-gray-500"
         onChange={handleTimezoneChange}
         value={selectedTimezone}
       >
