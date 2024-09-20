@@ -5,19 +5,19 @@ import TimezoneSelector from "./components/timeZonePicker";
 const App: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen w-screen">
-      <header className="#d97502 text-5xl flex items-center font-medium justify-center  h-16 ">
-        <h1 className="mt-48">What the time? </h1>
+      <header className="#d97502 flex items-center font-medium justify-center h-16">
+        <h1 className="text-5xl md:text-8xl mt-32">What the time?</h1>
       </header>
       <main className="flex-grow flex flex-col items-center justify-center">
-        {" "}
-        {/* Flexbox för centrering */}
         <div>
-          <ClockFunction timezone="Europe/Stockholm" /> {/* Ange tidszon här */}
+          <ClockFunction timezone="Europe/Stockholm" />
           <TimezoneSelector />
         </div>
       </main>
-      <footer className="#d97502 flex items-center justify-center text-lg h-16">
-        <p>Complains about the time will be dealt with in the future </p>
+      <footer className="#d97502 flex items-center justify-center text-sm md:text-lg h-16">
+        <p className="text-center">
+          Complaints about the time will be dealt with in the future
+        </p>
       </footer>
     </div>
   );

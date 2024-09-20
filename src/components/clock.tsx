@@ -15,11 +15,11 @@ const ClockFunction: React.FC<ClockFunctionProps> = ({ timezone }) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center">
-      <h1 className="text-xl font-semibold text-gray-700 mb-4">
+    <div className="flex flex-col items-center p-4">
+      <h1 className="text-xl font-semibold text-gray-700 mb-4 text-center">
         Current Time in {timezone}
       </h1>
-      <h2 className="text-5xl font-bold text-stone-700">
+      <h2 className="text-5xl font-bold text-stone-700 text-center">
         {time.toLocaleString("en-GB", {
           timeZone: timezone,
           hour12: false,
