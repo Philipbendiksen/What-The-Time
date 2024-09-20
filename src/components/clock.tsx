@@ -19,7 +19,7 @@ const ClockFunction: React.FC<ClockFunctionProps> = ({ timezone }) => {
       <h1 className="text-xl font-semibold text-gray-700 mb-4">
         Current Time in {timezone}
       </h1>
-      <h2 className="text-4xl font-bold text-stone-700">
+      <h2 className="text-5xl font-bold text-stone-700">
         {time.toLocaleString("en-GB", {
           timeZone: timezone,
           hour12: false,
